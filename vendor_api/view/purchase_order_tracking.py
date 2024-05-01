@@ -140,6 +140,10 @@ def check_field_data(data):
         default_data["delivery_date"] = timezone.now()
     if acknowledgment_date is not None:
         default_data["acknowledgment_date"] = timezone.now()
+    if items is not None:
+        default_data["items"] = items
+
+    
     
     
     return default_data
