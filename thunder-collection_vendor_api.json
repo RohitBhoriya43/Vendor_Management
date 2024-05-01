@@ -1,0 +1,251 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "vendor_api",
+    "collectionId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+    "dateExported": "2024-05-01T08:53:37.460Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3a9885ea-08c4-45dc-a531-959b588cbd86",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "create a new vendor",
+            "url": "http://127.0.0.1:3000/api/vendors/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-30T05:33:50.640Z",
+            "modified": "2024-05-01T07:03:22.330Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{superuser_token}}"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"rohit\",\n  \"contact_details\":\"qwwww,nnnn,kkk\",\n  \"address\":\"Pana Ghilana Murthal, Sonipat, Haryana 131027\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{basic_token_username}}",
+                    "password": "4930317fa0034bb4aa0a0ffb58ad818b"
+                }
+            }
+        },
+        {
+            "_id": "561a85b7-96d6-426c-ad93-f9d72a2ed68c",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "list of vendors",
+            "url": "http://127.0.0.1:3000/api/vendors/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-30T05:39:50.391Z",
+            "modified": "2024-05-01T07:26:08.744Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "{{superuser_token}}",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{basic_token_username}}",
+                    "password": "4930317fa0034bb4aa0a0ffb58ad818b"
+                }
+            }
+        },
+        {
+            "_id": "d8ae7450-c007-4dd6-a521-4e6bcae5a070",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "get only single vendor",
+            "url": "http://127.0.0.1:3000/api/vendors/vendor_f9482a39b94048e1bbd9fded1bb84277/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-30T05:46:20.992Z",
+            "modified": "2024-05-01T04:17:33.062Z",
+            "headers": []
+        },
+        {
+            "_id": "5d1b927b-9571-4704-954a-200c8a9af81d",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "delete in vendor",
+            "url": "http://127.0.0.1:3000/api/vendors/vendor_0442c4c2d4d6477fa149e8b55ed8b781/",
+            "method": "DELETE",
+            "sortNum": 45000,
+            "created": "2024-04-30T07:16:27.889Z",
+            "modified": "2024-04-30T07:16:49.706Z",
+            "headers": []
+        },
+        {
+            "_id": "fd07ba72-2170-4d52-bd94-1b55501a00e8",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "create a new Purchase order",
+            "url": "http://127.0.0.1:3000/api/purchase_orders/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-04-30T05:49:04.653Z",
+            "modified": "2024-05-01T04:18:51.614Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 76d18536b0372c35ec4a5f3ccb2a19d424091606"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"items\":{\n    \"name\":\"Samsung S21 FE\",\n    \"description\":\"This is a samsung company phone\",\n    \"price\":29999,\n    \"rating\":4.2\n  },\n  \"quantity\":1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "41cad840-bc08-49a6-800e-8ee50a7693e3",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "get all purchase order",
+            "url": "http://127.0.0.1:3000/api/purchase_orders/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-04-30T05:54:20.657Z",
+            "modified": "2024-05-01T07:25:39.966Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 76d18536b0372c35ec4a5f3ccb2a19d424091606",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{basic_token_username}}",
+                    "password": ""
+                }
+            }
+        },
+        {
+            "_id": "42a02485-6eeb-40ef-95b9-ebb674358ff3",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "update a purchase oder",
+            "url": "http://127.0.0.1:3000/api/purchase_orders/po_0c8da0ace2a5413aa59bf4ca852d388e/",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-04-30T06:11:39.024Z",
+            "modified": "2024-05-01T04:21:38.327Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 76d18536b0372c35ec4a5f3ccb2a19d424091606"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"quality_rating\":8.3\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d622c280-a482-441b-b2a7-29f1ab277ab1",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "delete the purchase order",
+            "url": "http://127.0.0.1:3000/api/purchase_orders/po_c85093839dfd47f983945d97dfde38ed/",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-04-30T07:07:48.065Z",
+            "modified": "2024-04-30T07:08:53.501Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 9cc5fa7cfc1bf4d6c4453ea14bbc36ec3d2892a9"
+                }
+            ]
+        },
+        {
+            "_id": "b699ceb0-a6d0-43c5-b03a-5586aa18d718",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "update acknowlegment date",
+            "url": "http://127.0.0.1:3000/api/purchase_orders/po_0c8da0ace2a5413aa59bf4ca852d388e/acknowledge",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-05-01T04:25:20.394Z",
+            "modified": "2024-05-01T04:26:16.616Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token 76d18536b0372c35ec4a5f3ccb2a19d424091606"
+                }
+            ]
+        },
+        {
+            "_id": "f875ed23-5fb8-4109-90b4-246904d52ebf",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "get vendor performance",
+            "url": "http://127.0.0.1:3000/api/vendors/vendor_f9482a39b94048e1bbd9fded1bb84277/performance",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-05-01T04:37:21.621Z",
+            "modified": "2024-05-01T04:37:51.815Z",
+            "headers": []
+        },
+        {
+            "_id": "580bf49c-c8f7-4a6b-b2d4-4c0b7c66c117",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "craete basic authentication",
+            "url": "http://127.0.0.1:3000/api/vendor/basic_user_created/",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-05-01T05:17:49.545Z",
+            "modified": "2024-05-01T05:37:17.358Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"be1d7d4af31744ac9e946b6800c34c3c\",\n  \"password\":\"4930317fa0034bb4aa0a0ffb58ad818b\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9c227580-98c6-4295-9dc5-52a17d45c463",
+            "colId": "e5ee1bd2-b641-4db9-843a-6a78bfbc59a2",
+            "containerId": "",
+            "name": "login super user",
+            "url": "http://127.0.0.1:3000/api/vendor/superuser_login/",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2024-05-01T05:38:21.780Z",
+            "modified": "2024-05-01T06:54:17.695Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"RohitBhoriya434\",\n  \"password\":\"Rohit@43\"\n}",
+                "form": []
+            },
+            "postReq": {
+                "inlineScripts": [
+                    {
+                        "script": [
+                            " var responseBody = pm.response.json()",
+                            " pm.environment.set(\"superuser_token\",\"Token \"+responseBody.token)"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {
+        "envId": "f7a1c295-26e9-4d10-856c-25f3b794eb2b"
+    },
+    "ref": "bCEvprfDcyRQeUyElcDk_XsEyFZPsgLOyosOx-tTSVmu2aYuL5AuNW5k4aWOwSQ17y_P8ySRnjjGqo4Ox5J5ww"
+}
