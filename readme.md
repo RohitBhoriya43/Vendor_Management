@@ -1,4 +1,36 @@
 
+# Vendor Management System
+
+Firstly create a python virual environment
+```bash
+  python -m venv venv
+```
+Activate the virual Environment 1 (windows)
+```bash
+  source venv/Scripts/activate
+```
+Activate the virual Environment 2 (mac/linux)
+```bash
+  . venv/bin/activate
+```
+
+Install the requirements.txt file
+```bash
+  pip install -r requirements.txt
+```
+Run the django project
+```bash
+  python manage.py runserver 3000
+```
+
+All vendor api like GET,POST,PUT,DELETE basic token or superuser token is valid
+
+
+
+
+
+
+
 ## New Basic Token Create APi
 
 
@@ -45,4 +77,3 @@ All Purchase order api like GET,POST,PUT,DELETE vendor token is valid
 
 
 
-# Vendor_Management
